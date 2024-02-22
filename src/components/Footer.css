@@ -1,0 +1,147 @@
+.footer-btn {
+    z-index: 1;
+    margin: auto;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+
+
+.footer-btn:hover {
+    opacity: 0.9;
+}
+
+.home-button {
+    background-color: #1D7328;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.home-button span {
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+}
+
+.home-button span:hover {
+    transition: all 0.5s ease-out allow-discrete;
+    transform: scale(1.2);
+}
+
+/* ........................................................ */
+
+.footer {
+    width: 100%;
+    background: #f4f4f4;
+    /* background: #AFCB80; */
+    position: absolute;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.col {
+    max-width: 300px;
+}
+
+.col .title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.col .text {
+    color: black;
+    font-size: 14px;
+}
+
+.col .c-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.col .c-item svg {
+    flex-shrink: 0;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.col span,
+text {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.social-items {
+    display: flex;
+    padding-top: 20px;
+}
+
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #3B5999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.social-icon2 {
+    background-color: #55ACEE;
+}
+
+.social-icon3 {
+    background-color: #F16262;
+}
+
+.social-icon4 {
+    background-color: #324f97;
+}
+
+.bottam-bar {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #066C28;
+}
+
+.bottam-bar-content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    color: #dcd9d9;
+    /* color: rgba(0, 0, 0, 0.5); */
+}
+
+.bottam-bar-content img {
+    width: 150px;
+    height: 20px;
+}

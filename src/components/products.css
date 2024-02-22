@@ -1,0 +1,29 @@
+.products-container {
+    margin: 75px 15px;
+}
+
+.sec-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-size: 24px;
+    padding-left: 50px;
+    color: #000;
+}
+
+.sec-heading:after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    background-color: #000;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 0;
+    padding: 0 50px;
+}
