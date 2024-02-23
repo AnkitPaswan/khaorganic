@@ -5,7 +5,6 @@
     bottom: 15px;
     right: 20px;
     cursor: pointer;
-
 }
 
 
@@ -39,9 +38,9 @@
 
 .footer {
     width: 100%;
-    background: #f4f4f4;
-    /* background: #AFCB80; */
+    background-color: #111111;
     position: absolute;
+    padding: 10px;
 }
 
 .footer-content {
@@ -52,6 +51,8 @@
     gap: 20px;
     justify-content: space-between;
     padding: 50px 0;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
 }
 
 .col {
@@ -62,24 +63,30 @@
     margin-bottom: 20px;
     font-size: 21px;
     font-weight: bold;
+    color: #F7F8FC;
 }
 
 .col .text {
-    color: black;
-    font-size: 14px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5em;
 }
 
 .col .c-item {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #999999;
+    gap: 5px;
 }
 
 .col .c-item svg {
     flex-shrink: 0;
-    font-size: 14px;
+    font-size: 18px;
     margin-right: 10px;
     margin-top: 4px;
-    color: rgba(0, 0, 0, 0.5);
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: #999999;
 }
 
 .col span,
@@ -87,11 +94,20 @@ text {
     display: block;
     cursor: pointer;
     margin-bottom: 10px;
+    transition: all ease 0.3s;
+}
+
+.col span:hover {
+    color: #ffff;
+    transform: scaley(1.1);
+    overflow: hidden;
 }
 
 .social-items {
     display: flex;
     padding-top: 20px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .social-icon1,
@@ -114,7 +130,8 @@ text {
 }
 
 .social-icon3 {
-    background-color: #F16262;
+    background: linear-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    /* background-color: #F16262; */
 }
 
 .social-icon4 {
@@ -122,8 +139,9 @@ text {
 }
 
 .bottam-bar {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #066C28;
+    border-top: 0.5px solid #3e3d3d;
+    padding: 10px;
+    /* background-color: #066C28; */
 }
 
 .bottam-bar-content {
@@ -137,11 +155,23 @@ text {
     justify-content: space-between;
     text-align: center;
     gap: 10px;
-    color: #dcd9d9;
-    /* color: rgba(0, 0, 0, 0.5); */
+    color: #999999;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+}
+
+.bottam-bar-content span {
+    color: #ffff;
+    cursor: pointer;
+    padding: 2px;
+    transition: all ease 0.2s;
+}
+
+.bottam-bar-content span:hover {
+    color: #1D7328;
 }
 
 .bottam-bar-content img {
-    width: 150px;
-    height: 20px;
+    width: fit-content;
+    height: 30px;
 }

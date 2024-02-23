@@ -39,6 +39,7 @@ const SingleProduct = () => {
                         </div>
                         <div className="right">
                             <span className="name">Lokwan Wheat Atta</span>
+                            <span className="qty">QTY: 500 g</span>
                             <span className="price">&#8377; 1200</span>
                             <span className="desc">Lokwan wheat Atta is a nutritious, healthy, and versatile food that is a good choice for people of all ages and dietary needs. it is a great way to start your day or enjoy as a healthy snack.</span>
 

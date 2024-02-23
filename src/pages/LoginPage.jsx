@@ -1,10 +1,10 @@
 import React from 'react'
 import './LoginPage.css'
 import { useNavigate } from "react-router-dom";
-import SignIn from '../assests/login1.svg'
-import Profile from '../assests/profile1.svg'
-// import PersonIcon from '@mui/icons-material/Person';
-// import LockIcon from '@mui/icons-material/Lock';
+import SignIn from '../assests/login.svg'
+import Profile from '../assests/profile.svg'
+import PersonIcon from '@mui/icons-material/Person';
+import LockIcon from '@mui/icons-material/Lock';
 
 
 const LoginPage = () => {
@@ -22,7 +22,7 @@ const LoginPage = () => {
                         <h2>Welcome</h2>
                         <div className="input-div one focus ">
                             <div className="i">
-                                {/* <PersonIcon /> */}
+                                <PersonIcon />
                             </div>
                             <div>
                                 <h5>Email</h5>
@@ -32,7 +32,7 @@ const LoginPage = () => {
                         </div>
                         <div className="input-div two focus">
                             <div className="i">
-                                {/* <LockIcon /> */}
+                                <LockIcon />
                             </div>
                             <div>
                                 <h5>Password</h5>

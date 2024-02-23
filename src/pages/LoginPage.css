@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-gap: 7rem; */
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    padding: 80px;
 
 
     @media screen and (max-width: 1050px) {
@@ -57,7 +58,6 @@
 
 form {
     width: 360px;
-    margin-left: 50px;
 
     @media screen and (max-width:1000px) {
         width: 290px;
@@ -86,14 +86,14 @@ h2 {
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
-    border-bottom: 2px solid #662e0e;
+    border-bottom: 2px solid #333;
 }
 
 .i {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #662e0e;
+    color: #1D7328;
     top: 8px;
     transition: .3s;
 }
@@ -142,7 +142,7 @@ h2 {
     margin-bottom: 4px;
 }
 
-form span {
+.login-container form span {
     display: block;
     text-align: right;
     text-decoration: underline;
@@ -153,9 +153,6 @@ form span {
     cursor: pointer;
 }
 
-form span {
-    color: #662e0e;
-}
 
 .btn {
     display: block;
@@ -166,7 +163,7 @@ form span {
     font-size: 1.2rem;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #662e0e, #efe3cf);
+    background-image: linear-gradient(to right, #1D7328, #539F22);
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;

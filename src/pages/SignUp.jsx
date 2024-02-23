@@ -1,10 +1,10 @@
 import React from 'react'
 import './SignUp.css'
-import Register from '../assests/singnup.svg'
-import Profile from '../assests/profile1.svg'
-// import PersonIcon from '@mui/icons-material/Person';
-// import LockIcon from '@mui/icons-material/Lock';
-// import EmailIcon from '@mui/icons-material/Email';
+import Register from '../assests/signup.svg'
+import Profile from '../assests/profile.svg'
+import PersonIcon from '@mui/icons-material/Person';
+import LockIcon from '@mui/icons-material/Lock';
+import EmailIcon from '@mui/icons-material/Email';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -13,17 +13,17 @@ const SignUp = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="main-container">
                 <div className="img">
                     <img src={Register} alt="" />
                 </div>
-                <div className="login-container">
+                <div className="signup-container">
                     <form action="">
                         <img className="avatar" src={Profile} alt="" />
                         <h2>Create Account</h2>
                         <div className="input-div one focus ">
                             <div className="i">
-                                {/* <PersonIcon /> */}
+                                <PersonIcon />
                             </div>
                             <div>
                                 <h5>Username</h5>
@@ -33,7 +33,7 @@ const SignUp = () => {
                         </div>
                         <div className="input-div one focus ">
                             <div className="i">
-                                {/* <EmailIcon /> */}
+                                <EmailIcon />
                             </div>
                             <div>
                                 <h5>Email</h5>
@@ -43,7 +43,7 @@ const SignUp = () => {
                         </div>
                         <div className="input-div two focus">
                             <div className="i">
-                                {/* <LockIcon /> */}
+                                <LockIcon />
                             </div>
                             <div>
                                 <h5>Password</h5>
