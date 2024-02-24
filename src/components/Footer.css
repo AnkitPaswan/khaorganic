@@ -61,8 +61,28 @@
 
 .col .title {
     margin-bottom: 20px;
-    font-size: 21px;
+    /* font-size: 21px; */
     font-weight: bold;
+    /* color: #F7F8FC; */
+}
+
+.col:nth-child(1) {
+    font-size: 30px;
+    color: #1D7328;
+}
+
+.col:nth-child(2) {
+    font-size: 21px;
+    color: #F7F8FC;
+}
+
+.col:nth-child(3) {
+    font-size: 21px;
+    color: #F7F8FC;
+}
+
+.col:nth-child(4) {
+    font-size: 21px;
     color: #F7F8FC;
 }
 
@@ -141,7 +161,6 @@ text {
 .bottam-bar {
     border-top: 0.5px solid #3e3d3d;
     padding: 10px;
-    /* background-color: #066C28; */
 }
 
 .bottam-bar-content {

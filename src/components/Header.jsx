@@ -56,7 +56,7 @@ const Header = () => {
                     </div>
                     <div className="right">
                         <li> <SearchIcon /></li>
-                        <span className="cart-icon">
+                        <span className="cart-icon" onClick={() => navigate("/Cart")}>
                             <ShoppingCartOutlinedIcon />
                             <span>5</span>
                         </span>
