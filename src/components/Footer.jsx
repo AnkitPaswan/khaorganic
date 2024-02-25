@@ -92,7 +92,7 @@ const Footer = () => {
             {
                 isHomePage && (
 
-                    <div className='footer-btn' onClick={() => navigate("/")}>
+                    <div className='footer-btn' onClick={() => navigate("#")}>
                         <div className='home-button'>
                             <span>⇧</span>
                         </div>

@@ -4,14 +4,14 @@ import './Cart.css';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { popularProducts } from '../utils/data';
 import Header from '../components/Header'
 import Announcement from '../components/Announcement'
 import Footer from '../components/Footer'
 
 const Cart = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
 
