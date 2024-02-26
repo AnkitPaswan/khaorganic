@@ -1,3 +1,8 @@
+.whywe-container {
+    background-color: #F7F8FC;
+    padding: 75px 10px;
+}
+
 .whywe {
     display: flex;
     flex-wrap: wrap;
@@ -5,26 +10,34 @@
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    padding: 50px 20px 10px;
-    /* background: url("../assests/5733.jpg");
-    background-size: cover; */
+    margin-top: 50px;
 }
 
 .head-Title {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
+    text-transform: uppercase;
+    font-size: 36px;
     font-weight: 700;
-    padding-top: 40px;
-    color: #539F22;
+    color: #000;
+}
+
+.head-Title::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #1D7328, #539F22);
 }
 
 .whywe-card {
     width: calc(25% - 15px);
-    margin-bottom: 24px;
-    /* border: 1px solid #d7d3d3; */
-    /* border-radius: 5px; */
+    /* margin-bottom: 24px; */
+    background-color: #FFFFFF;
+    padding: 20px 10px;
 }
 
 .whywe-thumbnail {
@@ -64,4 +77,37 @@
     font-size: 16px;
     font-weight: 100;
     opacity: 0.9;
+}
+
+/* ---------media-query--------- */
+
+@media screen and (max-width: 480px) {
+    .head-Title {
+        font-size: 24px;
+    }
+
+    .head-Title::after {
+        width: 80px;
+    }
+
+    .whywe-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .whywe-title {
+        font-size: 21px;
+    }
+
+    .whywe-details {
+        padding-bottom: 16px;
+    }
+
+    .whywe-details .desc {
+        font-size: 16px;
+    }
 }

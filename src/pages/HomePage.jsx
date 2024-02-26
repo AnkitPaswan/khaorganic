@@ -16,7 +16,8 @@ const HomePage = () => {
             <Banner />
             <Products headingText="Our Products" />
             <Philosophybanner />
-            <Whywe headTag="SHOP TO MAKE A DIFFERENCE" />
+            <Whywe headTag="Our Features" />
+            {/* <Whywe headTag="SHOP TO MAKE A DIFFERENCE" /> */}
             <Newsletter />
             <Footer />
         </div>

@@ -46,3 +46,32 @@
     cursor: pointer;
     border: 1px solid #539F22;
 }
+
+
+/* ----------media-query------------ */
+
+@media screen and (max-width: 480px) {
+    .newsletter {
+        padding: 20px;
+    }
+
+    .newsletter h1 {
+        font-size: 3em;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+    }
+
+    .newsletter .form {
+        width: 80%;
+        height: 30px;
+    }
+
+    .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}

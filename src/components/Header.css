@@ -169,3 +169,34 @@
         transform: translateY(0);
     }
 }
+
+/* -------------------media query-------------------- */
+
+@media screen and (max-width: 480px) {
+
+    .main-header {
+        padding: 0 40px;
+    }
+
+    .header-content {
+        height: 60px;
+    }
+
+    .left {
+        display: flex;
+        flex: 1;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .logo {
+        width: 60px;
+        overflow: hidden;
+    }
+
+    .center,
+    .right {
+        display: none;
+    }
+
+}

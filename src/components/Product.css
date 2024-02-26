@@ -75,7 +75,6 @@
     width: 100% !important;
     justify-content: center;
     align-items: center;
-    align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     font-size: 14px;
@@ -90,7 +89,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     letter-spacing: 0.3px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -103,11 +102,26 @@
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
     letter-spacing: 0.3px;
 }
 
 .shop-btn:hover {
     color: #539F22;
+}
+
+
+/* -------media-query--------- */
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 0px);
+    }
 }

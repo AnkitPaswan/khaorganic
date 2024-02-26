@@ -8,3 +8,13 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+
+/* -----------------media query------------- */
+
+@media screen and (max-width: 480px) {
+    .announcement {
+        height: 20px;
+        font-size: 10px;
+    }
+}
