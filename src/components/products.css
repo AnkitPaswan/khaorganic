@@ -34,6 +34,26 @@
 
 /* ---------media-query----------- */
 
+@media screen and (max-width: 1024px) {
+    .sec-heading {
+        padding-left: 22px;
+    }
+
+    .products {
+        padding: 0 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sec-heading {
+        padding-left: 18px;
+    }
+
+    .products {
+        padding: 0 18px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .sec-heading {
         font-size: 24px;

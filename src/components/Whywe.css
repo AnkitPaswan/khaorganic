@@ -36,6 +36,7 @@
 .whywe-card {
     width: calc(25% - 15px);
     /* margin-bottom: 24px; */
+    /* background-color: #000; */
     background-color: #FFFFFF;
     padding: 20px 10px;
 }
@@ -80,6 +81,18 @@
 }
 
 /* ---------media-query--------- */
+
+@media screen and (max-width: 1024px) {
+    .whywe-card {
+        width: calc(45% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whywe-card {
+        width: calc(45% - 10px);
+    }
+}
 
 @media screen and (max-width: 480px) {
     .head-Title {

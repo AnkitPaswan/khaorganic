@@ -9,6 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import './Footer.css'
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -27,7 +28,13 @@ const Footer = () => {
     });
     return (
         <>
-            <footer className="footer">
+            <motion.footer className="footer"
+
+                initial={{ opacity: 0.7 }}
+                transition={{ duration: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false }}
+            >
                 <div className="footer-content">
                     <div className="col">
                         <div className="title">KHAORGANIC</div>
@@ -88,15 +95,20 @@ const Footer = () => {
                         <img src="https://i.ibb.co/Qfvn4z6/payment.png" alt=" " />
                     </div>
                 </div>
-            </footer>
+            </motion.footer>
             {
                 isHomePage && (
 
-                    <div className='footer-btn' onClick={() => navigate("#")}>
+                    <motion.div className='footer-btn'
+                        initial={{ opacity: 0, x: 40 }}
+                        transition={{ duration: 1 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        viewport={{ once: false }}
+                        onClick={() => navigate("#")}>
                         <div className='home-button'>
                             <span>⇧</span>
                         </div>
-                    </div>
+                    </motion.div>
                 )
             }
 

@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import { motion } from 'framer-motion';
+
 
 const Product = ({ item }) => {
     const location = useLocation();
@@ -13,7 +15,12 @@ const Product = ({ item }) => {
     }, [location]);
 
     return (
-        <div className="product-card" onClick={() => navigate(`/singleproduct/${item.id}`)} >
+        <motion.div className="product-card"
+            initial={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false }}
+            onClick={() => navigate(`/singleproduct/${item.id}`)} >
 
             <div className="thumbnail">
                 <img src={item.img} alt="" />
@@ -33,7 +40,7 @@ const Product = ({ item }) => {
                     Add to cart
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     )
 }

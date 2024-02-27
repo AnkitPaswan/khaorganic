@@ -114,6 +114,13 @@
 
 /* -------media-query--------- */
 
+@media screen and (max-width: 1024px) {
+    .product-card {
+        width: calc(34% - 18px);
+
+    }
+}
+
 @media screen and (max-width: 768px) {
     .product-card {
         width: calc(50% - 10px);
