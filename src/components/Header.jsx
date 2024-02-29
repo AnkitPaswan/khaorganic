@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 import logo from "../assests/khaorganic-logo1.jpg";
 // import MenuIcon from '@mui/icons-material/Menu';
 
-
 const Header = () => {
+
     const [scrolled, setScrolled] = useState(false);
     const navigate = useNavigate();
 
@@ -63,10 +63,11 @@ const Header = () => {
                         </span>
                         <li className='sign' onClick={() => navigate("/Login")}>Sign in</li>
                     </div>
-                    {/* <div className="menu">
-                        <span className="menu-icon" onClick={() => navigate("/Cart")}>
+
+                    {/* <div className="hamburger-menu">
+                        <a>
                             <MenuIcon />
-                        </span>
+                        </a>
                     </div> */}
                 </div>
             </header>

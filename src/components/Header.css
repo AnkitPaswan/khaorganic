@@ -154,9 +154,10 @@
     border-radius: 10px;
 }
 
-.menu {
+.hamburger-menu {
     display: none;
 }
+
 
 .sticky-header {
     position: sticky;
@@ -229,13 +230,15 @@
         display: none;
     }
 
-    /* .menu {
-        display: block;
-    } */
-
     .logo {
         width: 80px;
         overflow: hidden;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+        position: relative;
     }
 }
 

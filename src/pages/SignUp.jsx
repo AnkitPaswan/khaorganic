@@ -13,8 +13,8 @@ const SignUp = () => {
 
     return (
         <>
-            <div className="main-container">
-                <div className="img">
+            <div className="main-signup-container">
+                <div className="signup-img">
                     <img src={Register} alt="" />
                 </div>
                 <div className="signup-container">
@@ -51,7 +51,7 @@ const SignUp = () => {
                                     type="password" className="input" placeholder='******' />
                             </div>
                         </div>
-                        <p onClick={() => navigate("/Login")}>Already have an account? SignIn</p>
+                        <span onClick={() => navigate("/Login")}>Already have an account? SignIn</span>
                         {/* <b className="error">{ErrMsg}</b> */}
                         <input type="submit" className="btn" value="SignUp" />
                     </form>

@@ -12,7 +12,7 @@ const LoginPage = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="main-login-container">
                 <div className="img">
                     <img src={SignIn} alt="" />
                 </div>
@@ -27,7 +27,7 @@ const LoginPage = () => {
                             <div>
                                 <h5>Email</h5>
                                 <input
-                                    type="email" className="input" placeholder='ankitpaswan@gmail.com' />
+                                    type="email" className="input" placeholder='example@gmail.com' />
                             </div>
                         </div>
                         <div className="input-div two focus">
