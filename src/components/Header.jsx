@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from 'react'
 import "./Header.css";
 import SearchIcon from '@mui/icons-material/Search';
@@ -6,10 +6,16 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useNavigate } from "react-router-dom";
 import logo from "../assests/khaorganic-logo1.jpg";
-// import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
 
+    const menuRef = useRef();
+    const [showSearch, setShowSearch] = useState(false);
+    const dropdown_toggle = (e) => {
+        menuRef.current.classList.toggle('center-visible');
+        e.target.classList.toggle('open');
+    }
     const [scrolled, setScrolled] = useState(false);
     const navigate = useNavigate();
 
@@ -37,7 +43,10 @@ const Header = () => {
                     <ul className="left">
                         <img className="logo" src={logo} alt="" />
                     </ul>
-                    <div className="center" >
+                    <div onClick={dropdown_toggle} className="hamburger-menu">
+                        <MenuIcon style={{ fontSize: "40px" }} />
+                    </div>
+                    <div ref={menuRef} className="center" >
                         <li onClick={() => navigate("/")}>Home</li>
                         <li className="dropdown">
 
@@ -56,7 +65,7 @@ const Header = () => {
                         <li>Contact</li>
                     </div>
                     <div className="right">
-                        <li> <SearchIcon /></li>
+                        <li> <SearchIcon onClick={() => setShowSearch(true)} /></li>
                         <span className="cart-icon" onClick={() => navigate("/Cart")}>
                             <ShoppingCartOutlinedIcon />
                             <span>5</span>

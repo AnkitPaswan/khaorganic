@@ -103,6 +103,7 @@
     .newsletter .form {
         width: 80%;
         height: 30px;
+        justify-content: center;
     }
 
     .form button {
