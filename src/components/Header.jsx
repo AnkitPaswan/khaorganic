@@ -7,7 +7,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useNavigate } from "react-router-dom";
 import logo from "../assests/khaorganic-logo1.jpg";
 import MenuIcon from '@mui/icons-material/Menu';
-
+import Search from "./Search";
 const Header = () => {
 
     const menuRef = useRef();
@@ -72,14 +72,9 @@ const Header = () => {
                         </span>
                         <li className='sign' onClick={() => navigate("/Login")}>Sign in</li>
                     </div>
-
-                    {/* <div className="hamburger-menu">
-                        <a>
-                            <MenuIcon />
-                        </a>
-                    </div> */}
                 </div>
             </header>
+            {showSearch && <Search setShowSearch={setShowSearch} />}
         </>
     )
 }
