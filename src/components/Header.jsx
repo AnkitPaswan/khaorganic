@@ -58,11 +58,12 @@ const Header = () => {
                                 <div className="dropdown-content">
                                     <div className="dropdown-item">Atta</div>
                                     <div className="dropdown-item">Besan</div>
+                                    <div className="dropdown-item">Daliya</div>
                                 </div>
                             )}
                         </li>
                         <li>About</li>
-                        <li>Contact</li>
+                        <li onClick={() => navigate("/contactUs")}>Contact</li>
                     </div>
                     <div className="right">
                         <li> <SearchIcon onClick={() => setShowSearch(true)} /></li>
